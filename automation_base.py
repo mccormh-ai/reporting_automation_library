@@ -18,7 +18,8 @@ class Auto_Base():
 
 
 
-    def _automation_internal(self, source_type=None)
+    def _automation_internal(self, source_type=None):
+        pass
 
     def static_dimension_tbls(self, source_type=None, update_condition):
         # source_type in ['raw', 'sql']
@@ -26,11 +27,16 @@ class Auto_Base():
 
     def dynamic_dimension_tbls(self, source_type=None):
         # source_type in ['raw', 'sql']
+        pass
 
-    def initialize_branch(branch_name, path_extension=None, file_extension=None, table_name=None):
+    def initialize_branch(branch_name, path_extension=None,
+                          file_extension=None, table_name=None):
         # Call to add new platform or path
         if path_extension is not None:
             # New branch is a flat file file
             os.path.join(self.directory_base, path_extension)
 
+
+
     def generate_fact_tbls(self, source_type=None):
+        pass
