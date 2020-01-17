@@ -11,6 +11,6 @@ class Branch():
         else:
             self.dataframe = convertDateColumns(self.dataframe)
 
-    def column_manipulation(self, base_dimension_df):
+    def column_manipulation(self, base_dimension_df, rename_dict):
         # deal with rename_columns
-        # 
+        #
