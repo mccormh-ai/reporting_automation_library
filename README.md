@@ -17,4 +17,7 @@ A Branch is a pathway for a platform for getting raw data from a source and mana
 'df': DATAFRAME
 }
 
-TEST PUSh
+Auto Should Read/Write, that's it
+Branch accepts a DataFrame and it return a DataFrame
+
+Move to data lakes
