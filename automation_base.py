@@ -27,15 +27,18 @@ class Auto_Base():
         # update_condition
 
     def dynamic_dimension_tbls(self, source_type=None):
-        # source_type in ['raw', 'sql']
+        # source_type in ['raw', 'sql']w_
 
     def initialize_dimension_tbl(self, name, data_source="flat file",
-                                path_extension=None, all_in_folder=False, file_extension=None, 
-                                table_name=None
+                                file_path_w_extension=None,
+                                all_in_folder=False, file_extension=None,
+                                table_name=None,
                                 return_type="DataFrame"):
         dimension_payload = dict()
         dimension_payload['Name'] = name
-        if
+        if data_source is "flat file":
+            if isinstance(file_path_w_extension, str):
+                pd.read_csv(os.path.join(self.directory_base, path_extension))
 
         if return_type is "DataFrame":
             dimension_tbls.append(dimension_payload)
